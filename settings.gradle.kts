@@ -1,0 +1,1 @@
+rootProject.name = "Proyecto_Gestion_Boletos_POO"
