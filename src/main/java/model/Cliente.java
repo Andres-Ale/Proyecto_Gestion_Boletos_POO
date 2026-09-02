@@ -9,4 +9,8 @@ public class Cliente extends Usuario {
     public void comprarBoleto(Boleto boleto) {
         System.out.println("Cliente " + nombre + " compró el boleto ID: " + boleto.getIdBoleto());
     }
+    @Override
+    public void mostrarMenu() {
+        System.out.println("--- Menú Cliente ---");
+    }
 }

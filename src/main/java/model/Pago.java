@@ -2,7 +2,7 @@ package model;
 
 import java.util.Date;
 
-public class Pago {
+public class Pago implements IPagable {
     private int idPago;
     private double monto;
     private Date fechaPago;
@@ -14,12 +14,12 @@ public class Pago {
         this.fechaPago = new Date();
         this.metodoPago = metodoPago;
     }
-
+    @Override
     public boolean procesarPago() {
         System.out.println("Procesando pago de $" + monto + " vía " + metodoPago);
         return true;
     }
-
+    @Override
     public void generarRecibo() {
         System.out.println("Recibo generado para el pago #" + idPago);
     }

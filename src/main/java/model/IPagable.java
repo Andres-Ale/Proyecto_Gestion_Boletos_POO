@@ -1,4 +1,6 @@
 package model;
 
-public class IPagable {
+public interface IPagable {
+    boolean procesarPago();
+    void generarRecibo();
 }

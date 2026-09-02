@@ -1,6 +1,6 @@
 package model;
 
-public class Usuario {
+public abstract class Usuario {
     protected int idUsuario;
     protected String nombre;
     protected String correo;
@@ -25,4 +25,5 @@ public class Usuario {
     public void actualizarPerfil() {
         System.out.println("Perfil actualizado.");
     }
+    public abstract void mostrarMenu();
 }
